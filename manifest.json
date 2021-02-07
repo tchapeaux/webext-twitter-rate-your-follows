@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "FollowRater",
+  "version": "1.0",
+
+  "description": "Allows you to rate who you follow on Twitter based on their tweets",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/home"],
+      "js": ["index.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/border-32.png",
+    "default_title": "Review Twitter follow",
+    "default_popup": "popup/popup.html"
+  },
+
+  "permissions": ["*://twitter.com/home", "storage"]
+}

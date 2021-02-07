@@ -1,0 +1,40 @@
+body {
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#data-table {
+  visibility: hidden;
+
+  width: 100%;
+}
+
+.data-row {
+  width: 100%;
+}
+
+.data-row:hover {
+  background-color: wheat;
+}
+
+.clear-btn {
+  background-color: transparent;
+  border: none;
+  color: orange;
+}
+
+.clear-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.negative-score {
+  background-color: coral;
+}
+
+.positive-score {
+  background-color: lightgreen;
+}
